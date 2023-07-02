@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title> Ingreso </title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="estatica.js"></script>
+	<link rel="stylesheet" href="estatica.css">
+</head>
+
+
+<body>
+
+	<div class="d-flex flex-column">
+		<div class="d-flex flex-column align-items-center encabezado">
+
+			<!-- aqui va el encabezado -->
+			<h1>"Foto Agenda"</h1>
+			<p>Donde podes agendar sesiones de manera rápida</p>
+
+		</div>
+		<div>
+
+			<!-- aqui va el contenido -->
+			<div class="d-flex flex-column contenido">
+
+				<div>
+					<!-- aqui va el slider de imagenes -->
+					<div id="carouselExampleRide" class="carousel slide carousel-fade carousel-dark" data-bs-ride="true">
+						<div class="carousel-inner">
+							<div class="carousel-item">
+								<div class="carousel-item active">
+									<img src="./imagenes/Contraflash.jpg" class="d-block w-100"
+										alt="Mamá y papá contra un flash">
+								</div>
+								<img src="./imagenes/bebé2.jpg" class="d-block w-100" alt="Foto de bebé dormida">
+							</div>
+							<div class="carousel-item active">
+								<img src="./imagenes/bebé3.jpg" class="d-block w-100" alt="Foto de bebé dormida ">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Anterior</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Siguiente</span>
+						</button>
+					</div>
+				</div>
+
+				<form>
+					<div>
+						<!-- aqui va el formulario -->
+						<div class="d-flex flex-row align-items-center item-fomulario">
+							<label class="form-label">Nombre Mapadres:</label>
+							<div class="flex-grow-1">
+								<input id="nombre" class="form-control" type="text" />
+								<small id="error-nombre" class="mensaje-error"></small>
+							</div>
+						</div>
+
+						<div class="d-flex flex-row align-items-center item-fomulario">
+							<label class="form-label">Nombre en redes:</label>
+							<div class="flex-grow-1">
+								<input id="nombreRedes" class="form-control" type="text" />
+								<small id="error-redes" class="mensaje-error"></small>
+							</div>
+						</div>
+					</div>
+
+					<div class="d-flex flex-row align-items-center item-fomulario">
+						<label class="form-label">Num.Telefono:</label>
+						<div class="flex-grow-1">
+							<input id="tel" class="form-control" type="tel" />
+							<small id="error-tel" class="mensaje-error"></small>
+						</div>
+					</div>
+
+					<div class="d-flex flex-row align-items-center item-fomulario">
+						<label class="form-label">Nombre del Bebé:</label>
+						<div class="flex-grow-1">
+							<input id="nombreBebe" class="form-control" type="text" />
+							<small id="error-bebe" class="mensaje-error"></small>
+						</div>
+					</div>
+
+					<div class="d-flex flex-row align-items-center item-fomulario">
+						<label class="form-label">Fecha de nacimiento:</label>
+						<div class="flex-grow-1">
+							<input id="fecha" class="form-control" type="date" />
+							<small id="error-fecha" class="mensaje-error"></small>
+						</div>
+					</div>
+
+
+
+			</div>
+
+			<div class="d-flex flex-row justify-content-end botonera">
+				<button id="enviar-btn" type="button" class="btn btn-outline-danger">Revisar Datos</button>
+				<a href="./agenda.html" class="btn btn-outline-success">Siguiente paso</a>
+			</div>
+			</form>
+		</div>
+	</div>
+	</div>
+
+
+</body>
+
+</html>
